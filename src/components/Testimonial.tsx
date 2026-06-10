@@ -12,7 +12,7 @@ export default function Testimonial() {
           }}
         >
           <figure className="testimonial">
-            &ldquo;Deje de usar el celular para musica: las descargas y la calidad de audio
+            &ldquo;Deje de usar el celular para música: las descargas y la calidad de audio
             cambiaron mi forma de entrenar.&rdquo;
             <cite>- Lucia, 28 - Buenos Aires</cite>
           </figure>
@@ -22,7 +22,7 @@ export default function Testimonial() {
             <cite>- Martin, 34 - Cordoba</cite>
           </figure>
           <figure className="testimonial">
-            &ldquo;Lo uso en colectivo, en el gym y en casa. Sin conexion, sin limites,
+            &ldquo;Lo uso en colectivo, en el gym y en casa. Sin conexión, sin límites,
             sin anuncios.&rdquo;
             <cite>- Sofia, 22 - Mendoza</cite>
           </figure>

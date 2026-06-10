@@ -35,7 +35,7 @@ export default function EmailCapture() {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
             >
-              Listo! Te avisamos cuando expire la oferta
+               Listo! Te avisamos cuando expire la oferta
             </motion.div>
           ) : (
             <form onSubmit={handleSubmit} className="email-capture__form">

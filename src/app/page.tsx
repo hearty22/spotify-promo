@@ -10,12 +10,12 @@ import EmailCapture from "@/components/EmailCapture";
 export const metadata: Metadata = {
   title: "Spotify Premium: 3 Meses Gratis | Oferta Exclusiva",
   description:
-    "Proba Spotify Premium 3 meses gratis. Escucha musica sin anuncios, sin conexion y con saltos ilimitados. Cancela cuando quieras.",
+    "Prueba Spotify Premium 3 meses gratis. Escucha música sin anuncios, sin conexión y con saltos ilimitados. Cancela cuando quieras.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Spotify Premium: 3 Meses Gratis",
     description:
-      "Proba Spotify Premium 3 meses gratis. Cancela cuando quieras.",
+      "Prueba Spotify Premium 3 meses gratis. Cancela cuando quieras.",
     url: "/",
   },
 };

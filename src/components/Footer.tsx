@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer" role="contentinfo">
       <div className="container footer__inner">
         <div>
-          &copy; {new Date().getFullYear()} Spotify AB. Campana de 3 meses gratis.
+          &copy; {new Date().getFullYear()} Spotify AB. Campaña de 3 meses gratis.
         </div>
         <nav aria-label="Enlaces legales">
           <Link href="#" style={{ marginRight: "1rem" }}>

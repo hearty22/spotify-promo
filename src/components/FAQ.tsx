@@ -1,19 +1,19 @@
 const items = [
   {
     q: "¿Cuando me cobran?",
-    a: "El cobro se realiza al finalizar el dia 90 del periodo de prueba. Recibiras un recordatorio por mail y notificaciones push antes del vencimiento.",
+    a: "El cobro se realiza al finalizar el día 90 del período de prueba. Recibirás un recordatorio por mail y notificaciones push antes del vencimiento.",
   },
   {
-    q: "¿Como cancelo la suscripcion?",
-    a: "Podes cancelar en cualquier momento desde Configuracion > Cuenta > Cambiar plan. No hay permanencia ni penalidades.",
+    q: "¿Cómoded cancelo la suscripción?",
+    a: "Podés cancelar en cualquier momento desde Configuración > Cuenta > Cambiar plan. No hay permanencia ni penalidades.",
   },
   {
     q: "¿Necesito tarjeta de credito?",
-    a: "Si, solicitamos un metodo de pago para validar tu cuenta. No se realizara ningun cargo durante los 3 meses de prueba.",
+    a: "Si, solicitamos un método de pago para válidar tu cuenta. No se realizará ningun cargo durante los 3 meses de prueba.",
   },
   {
     q: "¿Aplica a cuentas existentes?",
-    a: "La oferta es valida unicamente para nuevos suscriptores que nunca hayan probado Premium o que no hayan tenido una cuenta activa en los ultimos 12 meses.",
+    a: "La oferta es válida únicamente para nuevos suscriptores que nunca hayan probado Premium o que no hayan tenido una cuenta activa en los últimos 12 meses.",
   },
   {
     q: "¿Que pasa con mi plan Familiar o Duo?",

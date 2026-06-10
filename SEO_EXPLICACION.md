@@ -30,8 +30,8 @@ SEO (Search Engine Optimization) es el conjunto de prácticas destinadas a mejor
 title: { default: TITLE, template: `%s | ${SITE_NAME}` }
 
 // Descripción optimizada para Keywords
-description: "Proba Spotify Premium 3 meses gratis. Escucha musica sin anuncios..."
-keywords: ["Spotify Premium", "Spotify 3 meses gratis", "musica en streaming", ...]
+description: "Prueba Spotify Premium 3 meses gratis. Escucha música sin anuncios..."
+keywords: ["Spotify Premium", "Spotify 3 meses gratis", "música en streaming", ...]
 ```
 
 ### 2. Open Graph (Redes Sociales)

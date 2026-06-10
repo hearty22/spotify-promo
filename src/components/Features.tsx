@@ -1,7 +1,7 @@
 const features = [
   {
-    title: "Musica sin anuncios",
-    desc: "Escucha tus canciones y podcasts favoritos sin interrupciones publicitarias.",
+    title: "Música sin anuncios",
+    desc: "Escucha tus canciónes y podcasts favoritos sin interrupciones publicitarias.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
@@ -10,7 +10,7 @@ const features = [
     ),
   },
   {
-    title: "Escucha sin conexion",
+    title: "Escucha sin conexión",
     desc: "Descarga tus playlists y llevalas donde vayas, sin gastar datos moviles.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -22,7 +22,7 @@ const features = [
   },
   {
     title: "Saltos ilimitados",
-    desc: "Pasa a la siguiente cancion todas las veces que quieras, sin limites.",
+    desc: "Pasa a la siguiente canción todas las veces que quieras, sin límites.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <polygon points="5 4 15 12 5 20 5 4" />
@@ -41,7 +41,7 @@ const features = [
   },
   {
     title: "Calidad de audio superior",
-    desc: "Sonido envolvente y de alta fidelidad para vivir la musica como el artista la imagined.",
+    desc: "Sonido envolvente y de alta fidelidad para vivir la música como el artista lo pensó.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M9 18V5l12-2v13" />

@@ -7,15 +7,15 @@ const SITE_URL = "https://spotify-3-meses-gratis.example.com";
 const SITE_NAME = "Spotify Premium - 3 Meses Gratis";
 const TITLE = "Spotify Premium: 3 Meses Gratis | Oferta Exclusiva";
 const DESCRIPTION =
-  "Proba Spotify Premium 3 meses gratis. Escucha musica sin anuncios, sin conexion y con saltos ilimitados. Cancela cuando quieras.";
+  "Prueba Spotify Premium 3 meses gratis. Escucha música sin anuncios, sin conexión y con saltos ilimitados. Cancela cuando quieras.";
 const KEYWORDS = [
   "Spotify Premium",
   "Spotify 3 meses gratis",
-  "musica en streaming",
-  "escuchar musica sin anuncios",
+  "música en transmisión",
+  "escuchar música sin anuncios",
   "Spotify Wrapped",
   "oferta Spotify",
-  "suscripcion musical",
+  "suscripción músical",
 ];
 const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
 
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   keywords: KEYWORDS,
   applicationName: SITE_NAME,
-  authors: [{ name: "Spotify Campana" }],
+  authors: [{ name: "Spotify Campaña" }],
   creator: "Spotify",
   publisher: "Spotify",
   category: "music",

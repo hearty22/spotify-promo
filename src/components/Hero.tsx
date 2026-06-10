@@ -6,15 +6,15 @@ export default function Hero() {
     <section className="hero" aria-labelledby="hero-title" id="oferta">
       <div className="container hero__inner">
         <div>
-          <span className="hero__badge">Oferta limitada - Solo 7 dias</span>
+          <span className="hero__badge">Oferta limitada - Solo 7 días</span>
           <h1 id="hero-title">
-            Escucha sin limites. <br />
+            Escucha sin límites. <br />
             <span>3 meses de Spotify Premium gratis.</span>
           </h1>
           <p className="lead">
-            Disfruta musica sin anuncios, descargas para escuchar sin conexion y
-            saltos ilimitados durante 90 dias.{" "}
-            <strong>Cobramos recien al finalizar el cuarto mes</strong> y podes
+            Disfruta música sin anuncios, descargas para escuchar sin conexión y
+            saltos ilimitados durante 90 días.{" "}
+            <strong>Cobramos ahora al finalizar el cuarto mes</strong> y podés
             cancelar cuando quieras.
           </p>
 

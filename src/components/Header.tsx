@@ -19,7 +19,7 @@ export default function Header() {
             className="btn btn--primary"
             style={{ padding: "0.6rem 1.2rem", fontSize: "0.9rem" }}
           >
-            Probalo 3 meses gratis
+            Pruebalo 3 meses gratis
           </a>
         </nav>
       </div>
