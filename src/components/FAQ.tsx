@@ -9,7 +9,7 @@ const items = [
   },
   {
     q: "¿Necesito tarjeta de credito?",
-    a: "Si, solicitamos un método de pago para válidar tu cuenta. No se realizará ningun cargo durante los 3 meses de prueba.",
+    a: "Si, solicitamos un método de pago para válidar tu cuenta. No se realizará ningún cargo durante los 3 meses de prueba.",
   },
   {
     q: "¿Aplica a cuentas existentes?",
@@ -26,7 +26,10 @@ export default function FAQ() {
     <section className="section" id="faq" aria-labelledby="faq-title">
       <div className="container">
         <h2 id="faq-title">Preguntas frecuentes</h2>
-        <p className="sub">Todo lo que necesitas saber antes de activar la oferta.</p>
+        <p className="sub">
+          Todo lo que necesitás saber sobre esta Oferta Exclusiva de Spotify
+          Premium.
+        </p>
         <div className="faq">
           {items.map((it) => (
             <details key={it.q}>

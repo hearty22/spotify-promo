@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-const SITE_URL = "https://spotify-3-meses-gratis.example.com";
+const SITE_URL = "https://vercel.app";
 const SITE_NAME = "Spotify Premium - 3 Meses Gratis";
 const TITLE = "Spotify Premium: 3 Meses Gratis | Oferta Exclusiva";
 const DESCRIPTION =
