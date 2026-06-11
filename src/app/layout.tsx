@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -131,19 +132,21 @@ export default function RootLayout({
         />
         
         {/* Matomo Analytics - Medición de visitas y conversiones */}
-        <script
+        <Script
+          id="matomo-script"
+          strategy="afterInteractive"
+          src="https://cdn.matomo.cloud/spotifypromotwovercelapp.matomo.cloud/matomo.js"
+        />
+        <Script
+          id="matomo-init"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               var _paq = window._paq = window._paq || [];
               _paq.push(['trackPageView']);
               _paq.push(['enableLinkTracking']);
-              (function() {
-                var u="https://spotifypromotwovercelapp.matomo.cloud/";
-                _paq.push(['setTrackerUrl', u+'matomo.php']);
-                _paq.push(['setSiteId', '1']);
-                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                g.async=true; g.src='https://cdn.matomo.cloud/spotifypromotwovercelapp.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-              })();
+              _paq.push(['setTrackerUrl', 'https://spotifypromotwovercelapp.matomo.cloud/matomo.php']);
+              _paq.push(['setSiteId', '1']);
             `,
           }}
         />

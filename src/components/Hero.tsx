@@ -3,25 +3,25 @@ import Countdown from "./Countdown";
 import CTAContainer from "./CTAContainer";
 
 /**
- * Hero Section con SSR
+ * Hero Section con personalización
  * 
- * Propósito: Renderiza el título dinámicamente basado en datos del mock.
- * Los datos se leen en servidor (Server Component) para SEO óptimo.
+ * Propósito: Renderiza contenido personalizado según:
+ * - topGenre: Género musical popular en la región del usuario
+ * - countryName: Nombre del país del usuario
  * 
- * SEO: 
- * - H1 semántico con palabras clave
- * - El contenido se renderiza en servidor (no hay hydration delay)
- * - aria-label descriptivo para accesibilidad
+ * SEO: El contenido se renderiza en servidor (SSR)
  */
 interface HeroProps {
   userName?: string;
   topGenre?: string;
+  countryName?: string;
 }
 
-export default function Hero({ userName, topGenre }: HeroProps) {
-  // Título dinámico basado en datos del usuario
+export default function Hero({ userName, topGenre, countryName }: HeroProps) {
+  // Título dinámico basado en ubicación y género
+  // Ej: "Tu Rock Nacional favorito desde Argentina, sin anuncios"
   const dynamicTitle = topGenre 
-    ? `Tu ${topGenre} favorito, sin anuncios.` 
+    ? `Tu ${topGenre} favorito${countryName ? ` desde ${countryName}` : ''}, sin anuncios.` 
     : "Escucha sin límites.";
 
   return (
@@ -44,7 +44,6 @@ export default function Hero({ userName, topGenre }: HeroProps) {
           <Countdown />
           
           <div className="hero__ctas">
-            {/* Client Component para tracking deMatomo */}
             <CTAContainer />
             <Link href="#beneficios" className="btn btn--ghost btn--lg">
               Ver beneficios

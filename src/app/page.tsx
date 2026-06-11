@@ -6,17 +6,14 @@ import FAQ from "@/components/FAQ";
 import CTABand from "@/components/CTABand";
 import Stats from "@/components/Stats";
 import EmailCapture from "@/components/EmailCapture";
+import { getUserLocation } from "@/data/geo";
+import { getRandomGenreForRegion, getCountryName } from "@/data/regionData";
+import { getMockData } from "@/lib/mockData";
 
 /**
  * Página principal - Server Component
  * 
- * Propósito: Consume datos mock en servidor para renderizado SSR.
- * Esto garantiza SEO óptimo ya que el HTML se genera en servidor.
- * 
- * SEO:
- * - El título dinámico se renderiza antes de enviar al cliente
- * - No hay Content Layout Shift (CLS) por hydration
- * - Los crawlers ven el contenido completo
+ * Propósito: Personaliza el contenido según ubicación geográfica del usuario.
  */
 export const metadata: Metadata = {
   title: "Spotify Premium: 3 Meses Gratis | Oferta Exclusiva",
@@ -31,23 +28,23 @@ export const metadata: Metadata = {
   },
 };
 
-// Función para leer datos mock (simula lectura de API/BD)
-async function getMockData() {
-  // Simula delay de API (en producción sería fetch real)
-  const mockData = await import("../data/mockData.json");
-  return mockData.default;
-}
-
 export default async function HomePage() {
-  // Server-Side: consume datos mock
+  // 1. Detectar ubicación del usuario (IP o headers)
+  const countryCode = await getUserLocation();
+  
+  // 2. Obtener género musical para esa región (randomizado)
+  const topGenre = getRandomGenreForRegion(countryCode);
+  const countryName = getCountryName(countryCode);
+  
+  // 3. Datos mock del usuario
   const mockData = await getMockData();
 
   return (
     <main id="main">
-      {/* Pasa datos al Hero para renderizado dinámico */}
       <Hero 
-        userName={mockData.user} 
-        topGenre={mockData.topGenre} 
+        userName={mockData.user}
+        topGenre={topGenre}
+        countryName={countryName}
       />
       <Stats />
       <Features />
