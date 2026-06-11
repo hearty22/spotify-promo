@@ -5,7 +5,7 @@ export default function CTABand() {
     <section className="section" id="registro" aria-label="Activar oferta">
       <div className="container">
         <div className="cta-band">
-          <h2>Empieza hoy. Cobramos ahora en el mes 4.</h2>
+          <h2>Empieza hoy. Cobramos ahora en el mes 3.</h2>
           <p>
             Activa tu cuenta en menos de 2 minutos con tu mail, Google, Apple o
             Facebook. No te cobraremos durante los 90 días de prueba.

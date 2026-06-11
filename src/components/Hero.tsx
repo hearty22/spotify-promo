@@ -1,42 +1,57 @@
 import Link from "next/link";
 import Countdown from "./Countdown";
+import CTAContainer from "./CTAContainer";
 
-export default function Hero() {
+/**
+ * Hero Section con SSR
+ * 
+ * Propósito: Renderiza el título dinámicamente basado en datos del mock.
+ * Los datos se leen en servidor (Server Component) para SEO óptimo.
+ * 
+ * SEO: 
+ * - H1 semántico con palabras clave
+ * - El contenido se renderiza en servidor (no hay hydration delay)
+ * - aria-label descriptivo para accesibilidad
+ */
+interface HeroProps {
+  userName?: string;
+  topGenre?: string;
+}
+
+export default function Hero({ userName, topGenre }: HeroProps) {
+  // Título dinámico basado en datos del usuario
+  const dynamicTitle = topGenre 
+    ? `Tu ${topGenre} favorito, sin anuncios.` 
+    : "Escucha sin límites.";
+
   return (
     <section className="hero" aria-labelledby="hero-title" id="oferta">
       <div className="container hero__inner">
         <div>
           <span className="hero__badge">Oferta limitada - Solo 7 días</span>
           <h1 id="hero-title">
-            Escucha sin límites. <br />
+            {dynamicTitle}
+            <br />
             <span>3 meses de Spotify Premium gratis.</span>
           </h1>
           <p className="lead">
             Disfruta música sin anuncios, descargas para escuchar sin conexión y
             saltos ilimitados durante 90 días.{" "}
-            <strong>Cobramos ahora al finalizar el cuarto mes</strong> y podés
+            <strong>Cobramos ahora al finalizar el tercer mes</strong> y podés
             cancelar cuando quieras.
           </p>
-
+          
           <Countdown />
-
+          
           <div className="hero__ctas">
-            <Link
-              href="https://www.spotify.com/ar/signup/"
-              className="btn btn--primary btn--lg"
-              aria-label="Comenzar mis 3 meses gratis"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Comenzar mis 3 meses gratis
-            </Link>
+            {/* Client Component para tracking deMatomo */}
+            <CTAContainer />
             <Link href="#beneficios" className="btn btn--ghost btn--lg">
               Ver beneficios
             </Link>
           </div>
           <p className="hero__meta">
-            Aplica a nuevos suscriptores. Sujeto a terminos. Cobro desde
-            el mes 4.
+            Aplica a nuevos suscriptores. Sujeto a términos. Cobro desde el mes 3.
           </p>
         </div>
         <div className="hero__visual" aria-hidden="true">
@@ -93,7 +108,7 @@ export default function Hero() {
               letterSpacing="2"
               fontFamily="Inter, sans-serif"
             >
-              MESES GRATIS
+              MESES Gratis
             </text>
           </svg>
         </div>

@@ -67,7 +67,7 @@ export default function Features() {
       <div className="container">
         <h2 id="beneficios-title">Todos los beneficios de Premium, 3 meses sin cargo.</h2>
         <p className="sub">
-          Disenado para acompanarte en cada momento: entrenamiento, viaje, estudio o
+          Diseñado para acompañarte en cada momento: entrenamiento, viaje, estudio o
           descanso. Premium desbloquea la experiencia completa de Spotify.
         </p>
         <ul className="features" role="list">

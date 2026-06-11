@@ -15,7 +15,7 @@ const KEYWORDS = [
   "escuchar música sin anuncios",
   "Spotify Wrapped",
   "oferta Spotify",
-  "suscripción músical",
+  "suscripción musical",
 ];
 const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
 
@@ -92,7 +92,7 @@ export const viewport: Viewport = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Product",
-  name: "Spotify Premium - Suscripcion 3 meses gratis",
+  name: "Spotify Premium - Suscripción 3 meses gratis",
   description: DESCRIPTION,
   brand: { "@type": "Brand", name: "Spotify" },
   offers: {
@@ -101,7 +101,7 @@ const jsonLd = {
     priceCurrency: "ARS",
     availability: "https://schema.org/InStock",
     url: SITE_URL,
-    description: "3 meses gratis. Cobro desde el mes 4.",
+    description: "3 meses gratis. Cobro desde el mes 3.",
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -128,6 +128,24 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        
+        {/* Matomo Analytics - Medición de visitas y conversiones */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              var _paq = window._paq = window._paq || [];
+              _paq.push(['trackPageView']);
+              _paq.push(['enableLinkTracking']);
+              (function() {
+                var u="https://spotifypromotwovercelapp.matomo.cloud/";
+                _paq.push(['setTrackerUrl', u+'matomo.php']);
+                _paq.push(['setSiteId', '1']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.async=true; g.src='https://cdn.matomo.cloud/spotifypromotwovercelapp.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+              })();
+            `,
+          }}
         />
       </head>
       <body>

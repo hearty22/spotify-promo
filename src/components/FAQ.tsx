@@ -4,7 +4,7 @@ const items = [
     a: "El cobro se realiza al finalizar el día 90 del período de prueba. Recibirás un recordatorio por mail y notificaciones push antes del vencimiento.",
   },
   {
-    q: "¿Cómoded cancelo la suscripción?",
+    q: "¿Cómo cancelo la suscripción?",
     a: "Podés cancelar en cualquier momento desde Configuración > Cuenta > Cambiar plan. No hay permanencia ni penalidades.",
   },
   {
